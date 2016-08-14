@@ -1,0 +1,113 @@
+
+    body {
+	background-color: #D3E3E8;
+	font-family: 'Trebuchet MS', Helvetica, sans-serif;
+	font-size: 16px;	
+    color: #9C4206;
+        
+    }     
+    a:link, a:visited {
+    color: #ffb1b9;          
+                  
+      }
+    .section {
+      padding: 1em 0;
+    }
+    .header {
+      background: linear-gradient(to bottom, #302e39 0%, #5f5b71 100%); 
+      color: #ff944d;
+      padding: 1em 0 2em;
+    }
+    svg {
+      display: block;
+      margin: 0 auto;
+    }
+    .axis path, .axis line {
+      fill: none;
+      stroke: #9C4206;
+      shape-rendering: crispEdges;
+
+    }
+    .axis text {
+        font-size: 18px;
+        fill: #9C4206;
+    }
+
+    .point {
+      stroke-width: 1;
+      opacity: .5;
+    }
+
+      .blueText {
+          color: #6971F4;
+          font-weight: bold;
+          font-size: 20px;
+      }
+      
+      .redText {
+          color: #E97174;          
+          font-weight: bold;          
+          font-size: 20px;          
+      }
+      
+      #tooltip {
+        width: 300px;
+        height: auto;
+        padding: 10px;
+        background-color: #F0F7C3;
+          background: orange;
+        border-radius: 10px;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+        pointer-events: none;
+      }
+
+    #tooltip.hidden {
+            display: none;
+    }
+
+div.tooltip {   
+    position: absolute;         
+    text-align: center; 
+    vertical-align: middle;        
+    padding: 5px;               
+    background: #fee5cd; 
+    border: 0px;        
+    border-radius: 6px;         
+    pointer-events: none;     
+    
+}
+
+
+.node {
+  cursor: pointer;
+}
+
+.node:hover {
+  stroke: #000;
+  stroke-width: 1.5px;
+}
+
+/*.node--leaf:hover {
+  stroke: #000;
+  stroke-width: 1.5px;
+    pointer-events: visible;
+}*/
+
+.node--leaf {
+  fill: #eefdf2;
+    pointer-events: none;
+}
+
+
+.label {
+  font: 18px "Trebuchet MS", Helvetica, sans-serif;
+  text-anchor: middle;
+  text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;
+/*    transform: rotate(90);*/
+}
+
+.label,
+.node--root
+    {
+      pointer-events: none;
+    }
